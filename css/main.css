@@ -1,0 +1,101 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes example {
+    0%   {background-color: red;}
+    10%  {background-color: yellow;}
+    20%  {background-color: blue;}
+    30% {background-color: green;}
+    40%   {background-color: purple;}
+    50%  {background-color: pink;}
+    60%  {background-color: orange;}
+    70% {background-color: violet;}
+    80%  {background-color: skyblue;}
+    90% {background-color: greenyellow;}
+    100% {background-color: magenta;}
+}
+
+
+.one {
+    background-color: cyan;
+    color: green;
+    transition-property: all 1s ease; 
+    transition-duration: 1s;
+    text-align: center;
+    display: none;
+}
+
+.one:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.two {
+    background-color: brown;
+    animation-name: example;
+    animation-duration: 1ms;
+    animation-iteration-count: infinite;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.three {
+    background-color: blue;
+    display: none;
+}
+
+.btn-one {
+    width: 500px;
+    height: 100px;
+    background-color: aqua;
+    border: none;
+    opacity: 30%;
+    transition: opacity 2s;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: black 5px 5px 5px;
+    
+}
+
+.btn-one:hover {
+    opacity: 100%;
+}
+
+.btn-one:focus {
+    box-shadow: black 2px 2px 2px;
+}
+
+
+.btn-two {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: none;
+    transition: 1s;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+
+.btn-two:focus {
+    background-color: blue;
+    color: white;
+    width: 500px;
+}
